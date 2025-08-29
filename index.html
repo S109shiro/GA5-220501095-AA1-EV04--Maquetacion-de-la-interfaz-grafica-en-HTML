@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
         <meta charset="UTF-8" />
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Taxi Travel - Inicio</title>
-</head>
-<body>
-    <!--Header-->
-    <header class="text-gray-600 body-font bg-[#FEBC2F]">
+        <title>My Taxi Travel - Inicio</title>
+    </head>
+    <body>
+        <!--Header-->
+        <header class="text-gray-600 body-font bg-[#FEBC2F]">
             <div
                 class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
             >
@@ -17,30 +17,51 @@
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
-                        viewBox="0 0 24 24"
+                        width="30"
+                        height="30"
+                        fill="currentColor"
+                        class="hover:fill-white cursor-pointer transition delay-100 ease-in-out"
+                        viewBox="0 0 16 16"
                     >
                         <path
-                            d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
-                        ></path>
+                            d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679q.05.242.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.8.8 0 0 0 .381-.404l.792-1.848ZM3 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2m10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2M6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2zM2.906 5.189a.51.51 0 0 0 .497.731c.91-.073 3.35-.17 4.597-.17s3.688.097 4.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 11.691 3H4.309a.5.5 0 0 0-.447.276L2.906 5.19Z"
+                        />
                     </svg>
                     <span class="ml-3 text-xl">My Taxi Travel</span>
                 </a>
                 <nav
                     class="md:ml-auto flex flex-wrap items-center text-base justify-center"
                 >
-                    <a class="mr-5 hover:text-gray-900" href="index.html">Inicio</a>
-                    <a class="mr-5 hover:text-gray-900" href="paginas/solicitarViaje/solicitudViaje.html">Solicitar Viaje</a>
-                    <a class="mr-5 hover:text-gray-900" href="paginas/sobreNosotros/sobreNosotros.html">Sobre Nosotros</a>
-                    <a class="mr-5 hover:text-gray-900" href="paginas/soporte/soporte.html">Soporte</a>
-                    <a class="mr-5 hover:text-gray-900" href="paginas/miCuenta/miCuenta.html">Mi Cuenta</a>
+                    <a
+                        class="mr-5 text-gray-900 bg-neutral-50 p-2 rounded-lg"
+                        href="index.html"
+                        >Inicio</a
+                    >
+                    <a
+                        class="mr-5 hover:text-gray-900"
+                        href="paginas/solicitarViaje/solicitudViaje.html"
+                        >Solicitar Viaje</a
+                    >
+                    <a
+                        class="mr-5 hover:text-gray-900"
+                        href="paginas/sobreNosotros/sobreNosotros.html"
+                        >Sobre Nosotros</a
+                    >
+                    <a
+                        class="mr-5 hover:text-gray-900"
+                        href="paginas/soporte/soporte.html"
+                        >Soporte</a
+                    >
+                    <a
+                        class="mr-5 hover:text-gray-900"
+                        href="paginas/miCuenta/miCuenta.html"
+                        >Mi Cuenta</a
+                    >
                 </nav>
-                <button class="inline-flex items-center bg-gray-100 border-1 border-black rounded-lg py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 cursor-pointer transition delay-180 ease-in-out mr-2"> <a href="paginas/login/login.html">Login</a>
+                <button
+                    class="inline-flex items-center bg-gray-300 border-1 border-black rounded-lg py-1 px-3 focus:outline-none hover:bg-gray-100 hover:text-black rounded text-base mt-4 md:mt-0 cursor-pointer transition delay-100 ease-in-out mr-2"
+                >
+                    <a href="paginas/login/login.html">Login</a>
                     <svg
                         fill="none"
                         stroke="currentColor"
@@ -53,7 +74,10 @@
                         <path d="M5 12h14M12 5l7 7-7 7"></path>
                     </svg>
                 </button>
-                <button class="inline-flex items-center border-1 border-black bg-[#2C2C2C] rounded-lg py-1 px-3 focus:outline-none hover:bg-gray-200 hover:text-black rounded text-base mt-4 md:mt-0 cursor-pointer transition delay-180 ease-in-out text-white"><a href="paginas/login/registro.html">Registro</a>
+                <button
+                    class="inline-flex items-center border-1 border-black bg-[#2C2C2C] rounded-lg py-1 px-3 focus:outline-none hover:bg-gray-200 hover:text-black rounded text-base mt-4 md:mt-0 cursor-pointer transition delay-100 ease-in-out text-white"
+                >
+                    <a href="paginas/login/registro.html">Registro</a>
                     <svg
                         fill="none"
                         stroke="currentColor"
@@ -67,10 +91,10 @@
                     </svg>
                 </button>
             </div>
-    </header>
+        </header>
 
-    <!--Hero-->
-    <section class="text-gray-600 body-font">
+        <!--Hero-->
+        <section class="text-gray-600 body-font">
             <div class="container px-5 py-24 mx-auto flex flex-wrap">
                 <div class="lg:w-2/3 mx-auto">
                     <div
@@ -79,138 +103,316 @@
                         <img
                             alt="gallery"
                             class="w-full object-cover h-full object-center block opacity-25 absolute inset-0"
-                            src="https://dummyimage.com/820x340"
+                            src="https://dummyimage.com/1420x340"
                         />
                         <div class="text-center relative z-10 w-full">
                             <h2
-                                class="text-2xl text-gray-900 font-medium title-font mb-2"
+                                class="text-5xl text-gray-900 font-medium title-font mb-2"
                             >
-                                Shooting Stars
+                                My Travel Taxi
                             </h2>
                             <p class="leading-relaxed">
                                 Skateboard +1 mustache fixie paleo lumbersexual.
                             </p>
-                            <a
-                                class="mt-3 text-indigo-500 inline-flex items-center"
-                                >Learn More
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Calificaciones-->
+        <section class="text-gray-600 body-font">
+            <div class="container px-5 py-24 mx-auto">
+                <h1
+                    class="text-3xl font-medium title-font text-gray-900 mb-12 text-center"
+                >
+                    Reseñas de nuestros clientes
+                </h1>
+                <div class="flex flex-3 -m-4">
+                    <div class="p-4 md:w-1/2 w-full">
+                        <div class="h-full bg-gray-100 p-8 rounded shadow-lg">
+                            <div class="flex mb-2">
                                 <svg
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    class="w-4 h-4 ml-2"
+                                    width="20"
+                                    height="20"
                                     viewBox="0 0 24 24"
-                                >
-                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                    fill="black"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                <polygon
+                                    points="12 1 15 8 22 9 17 15 19 22 12 18 5 22 7 15 2 9 9 8"
+                                />
                                 </svg>
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="black"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                <polygon
+                                    points="12 1 15 8 22 9 17 15 19 22 12 18 5 22 7 15 2 9 9 8"
+                                />
+                                </svg>
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="black"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                <polygon
+                                    points="12 1 15 8 22 9 17 15 19 22 12 18 5 22 7 15 2 9 9 8"
+                                />
+                                </svg>
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="black"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                <polygon
+                                    points="12 1 15 8 22 9 17 15 19 22 12 18 5 22 7 15 2 9 9 8"
+                                />
+                                </svg>
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="black"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                <polygon
+                                    points="12 1 15 8 22 9 17 15 19 22 12 18 5 22 7 15 2 9 9 8"
+                                />
+                                </svg>
+                            </div>
+                            <p class="leading-relaxed mb-6">
+                                Synth chartreuse iPhone lomo cray raw denim
+                                brunch everyday carry neutra before they sold
+                                out fixie 90's microdosing. Tacos pinterest
+                                fanny pack venmo, post-ironic heirloom try-hard
+                                pabst authentic iceland.
+                            </p>
+                            <a class="inline-flex items-center">
+                                <img
+                                    alt="testimonial"
+                                    src="https://dummyimage.com/106x106"
+                                    class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
+                                />
+                                <span class="flex-grow flex flex-col pl-4">
+                                    <span
+                                        class="title-font font-medium text-gray-900"
+                                        >Holden Caulfield</span
+                                    >
+                                    <span class="text-gray-500 text-sm"
+                                        >UI DEVELOPER</span
+                                    >
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/2 w-full">
+                        <div class="h-full bg-gray-100 p-8 rounded shadow-lg">
+                            <div class="flex mb-2">
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="black"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                <polygon
+                                    points="12 1 15 8 22 9 17 15 19 22 12 18 5 22 7 15 2 9 9 8"
+                                />
+                                </svg>
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="black"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                <polygon
+                                    points="12 1 15 8 22 9 17 15 19 22 12 18 5 22 7 15 2 9 9 8"
+                                />
+                                </svg>
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="black"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                <polygon
+                                    points="12 1 15 8 22 9 17 15 19 22 12 18 5 22 7 15 2 9 9 8"
+                                />
+                                </svg>
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="black"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                <polygon
+                                    points="12 1 15 8 22 9 17 15 19 22 12 18 5 22 7 15 2 9 9 8"
+                                />
+                                </svg>
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="black"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                <polygon
+                                    points="12 1 15 8 22 9 17 15 19 22 12 18 5 22 7 15 2 9 9 8"
+                                />
+                                </svg>
+                            </div>
+                            <p class="leading-relaxed mb-6">
+                                Synth chartreuse iPhone lomo cray raw denim
+                                brunch everyday carry neutra before they sold
+                                out fixie 90's microdosing. Tacos pinterest
+                                fanny pack venmo, post-ironic heirloom try-hard
+                                pabst authentic iceland.
+                            </p>
+                            <a class="inline-flex items-center">
+                                <img
+                                    alt="testimonial"
+                                    src="https://dummyimage.com/107x107"
+                                    class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
+                                />
+                                <span class="flex-grow flex flex-col pl-4">
+                                    <span
+                                        class="title-font font-medium text-gray-900"
+                                        >Alper Kamu</span
+                                    >
+                                    <span class="text-gray-500 text-sm"
+                                        >DESIGNER</span
+                                    >
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/2 w-full">
+                        <div class="h-full bg-gray-100 p-8 rounded shadow-lg">
+                            <div class="flex mb-2">
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="black"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                <polygon
+                                    points="12 1 15 8 22 9 17 15 19 22 12 18 5 22 7 15 2 9 9 8"
+                                />
+                                </svg>
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="black"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                <polygon
+                                    points="12 1 15 8 22 9 17 15 19 22 12 18 5 22 7 15 2 9 9 8"
+                                />
+                                </svg>
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="black"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                <polygon
+                                    points="12 1 15 8 22 9 17 15 19 22 12 18 5 22 7 15 2 9 9 8"
+                                />
+                                </svg>
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="black"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                <polygon
+                                    points="12 1 15 8 22 9 17 15 19 22 12 18 5 22 7 15 2 9 9 8"
+                                />
+                                </svg>
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="black"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                <polygon
+                                    points="12 1 15 8 22 9 17 15 19 22 12 18 5 22 7 15 2 9 9 8"
+                                />
+                                </svg>
+                            </div>
+                            <p class="leading-relaxed mb-6">
+                                Synth chartreuse iPhone lomo cray raw denim
+                                brunch everyday carry neutra before they sold
+                                out fixie 90's microdosing. Tacos pinterest
+                                fanny pack venmo, post-ironic heirloom try-hard
+                                pabst authentic iceland.
+                            </p>
+                            <a class="inline-flex items-center">
+                                <img
+                                    alt="testimonial"
+                                    src="https://dummyimage.com/106x106"
+                                    class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
+                                />
+                                <span class="flex-grow flex flex-col pl-4">
+                                    <span
+                                        class="title-font font-medium text-gray-900"
+                                        >Holden Caulfield</span
+                                    >
+                                    <span class="text-gray-500 text-sm"
+                                        >UI DEVELOPER</span
+                                    >
+                                </span>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-    </section>
+        </section>
 
-    <!--Calificaciones-->
-    <section class="text-gray-600 body-font">
-            <div class="container px-5 py-24 mx-auto">
-                <h1 class="text-3xl font-medium title-font text-gray-900 mb-12 text-center">Testimonials</h1>
-                <div class="flex flex-3 -m-4">
-                <div class="p-4 md:w-1/2 w-full">
-                    <div class="h-full bg-gray-100 p-8 rounded">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
-                        <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
-                    </svg>
-                    <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
-                    <a class="inline-flex items-center">
-                        <img alt="testimonial" src="https://dummyimage.com/106x106" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
-                        <span class="flex-grow flex flex-col pl-4">
-                        <span class="title-font font-medium text-gray-900">Holden Caulfield</span>
-                        <span class="text-gray-500 text-sm">UI DEVELOPER</span>
-                        </span>
-                    </a>
-                    </div>
-                </div>
-                <div class="p-4 md:w-1/2 w-full">
-                    <div class="h-full bg-gray-100 p-8 rounded">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
-                        <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
-                    </svg>
-                    <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
-                    <a class="inline-flex items-center">
-                        <img alt="testimonial" src="https://dummyimage.com/107x107" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
-                        <span class="flex-grow flex flex-col pl-4">
-                        <span class="title-font font-medium text-gray-900">Alper Kamu</span>
-                        <span class="text-gray-500 text-sm">DESIGNER</span>
-                        </span>
-                    </a>
-                    </div>
-                </div>
-                <div class="p-4 md:w-1/2 w-full">
-                    <div class="h-full bg-gray-100 p-8 rounded">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
-                        <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
-                    </svg>
-                    <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
-                    <a class="inline-flex items-center">
-                        <img alt="testimonial" src="https://dummyimage.com/106x106" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
-                        <span class="flex-grow flex flex-col pl-4">
-                        <span class="title-font font-medium text-gray-900">Holden Caulfield</span>
-                        <span class="text-gray-500 text-sm">UI DEVELOPER</span>
-                        </span>
-                    </a>
-                    </div>
-                </div>
-                </div>
-            </div>
-    </section>
-
-    <!--Footer-->
-    <footer class="text-gray-600 body-font">
+        <!--Footer-->
+        <footer class="text-gray-600 body-font bg-[#FEBC2F]">
             <div
                 class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
             >
                 <a
                     class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
                 >
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
-                        viewBox="0 0 24 24"
-                    >
-                        <path
-                            d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
-                        ></path>
-                    </svg>
-                    <span class="ml-3 text-xl">Tailblocks</span>
+                    <a href="index.html">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="30"
+                            height="30"
+                            fill="black"
+                            class="hover:fill-white cursor-pointer transition delay-100 ease-in-out"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679q.05.242.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.8.8 0 0 0 .381-.404l.792-1.848ZM3 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2m10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2M6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2zM2.906 5.189a.51.51 0 0 0 .497.731c.91-.073 3.35-.17 4.597-.17s3.688.097 4.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 11.691 3H4.309a.5.5 0 0 0-.447.276L2.906 5.19Z"
+                            />
+                        </svg>
+                    </a>
+                    <span class="ml-3 text-xl text-black">My Taxi Travel</span>
                 </a>
                 <p
-                    class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
+                    class="text-sm text-black sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-black-500 sm:py-2 sm:mt-0 mt-4"
                 >
-                    © 2020 Tailblocks —
-                    <a
-                        href="https://twitter.com/knyttneve"
-                        class="text-gray-600 ml-1"
-                        rel="noopener noreferrer"
-                        target="_blank"
-                        >@knyttneve</a
-                    >
+                    © 2025 My Taxi Travel
                 </p>
                 <span
                     class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
                 >
-                    <a class="text-gray-500">
+                    <a
+                        class="text-gray-500"
+                        href="https://www.facebook.com/"
+                        target="_blank"
+                    >
                         <svg
-                            fill="currentColor"
+                            fill="black"
                             stroke-linecap="round"
                             stroke-linejoin="round"
                             stroke-width="2"
-                            class="w-5 h-5"
+                            class="w-5 h-5 hover:fill-[#3b5998] cursor-pointer"
                             viewBox="0 0 24 24"
                         >
                             <path
@@ -218,28 +420,40 @@
                             ></path>
                         </svg>
                     </a>
-                    <a class="ml-3 text-gray-500">
+                    <a
+                        class="ml-3 text-gray-500"
+                        href="https://x.com/home?lang=es"
+                        target="_blank"
+                    >
                         <svg
-                            fill="currentColor"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            class="w-5 h-5"
-                            viewBox="0 0 24 24"
-                        >
-                            <path
-                                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
-                            ></path>
-                        </svg>
-                    </a>
-                    <a class="ml-3 text-gray-500">
-                        <svg
-                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 50 50"
+                            fill="black"
                             stroke="currentColor"
                             stroke-linecap="round"
                             stroke-linejoin="round"
+                            stroke-width="0"
+                            class="w-5 h-5 hover:fill-[#0e76a8] cursor-pointer"
+                        >
+                            <path
+                                d="M 5.9199219 6 L 20.582031 27.375 L 6.2304688 44 L 9.4101562 44 L 21.986328 29.421875 L 31.986328 44 L 44 44 L 28.681641 21.669922 L 42.199219 6 L 39.029297 6 L 27.275391 19.617188 L 17.933594 6 L 5.9199219 6 z M 9.7167969 8 L 16.880859 8 L 40.203125 42 L 33.039062 42 L 9.7167969 8 z"
+                            ></path>
+                        </svg>
+                    </a>
+                    <a
+                        class="ml-3 text-gray-500"
+                        href="https://www.instagram.com/"
+                        target="_blank"
+                    >
+                        <svg
+                            fill="black"
+                            stroke="#FEBC2F"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
                             stroke-width="2"
-                            class="w-5 h-5"
+                            class="w-5 h-5 hover:fill-[#833ab4] cursor-pointer"
                             viewBox="0 0 24 24"
                         >
                             <rect
@@ -255,14 +469,18 @@
                             ></path>
                         </svg>
                     </a>
-                    <a class="ml-3 text-gray-500">
+                    <a
+                        class="ml-3 text-gray-500"
+                        href="https://co.linkedin.com/"
+                        target="_blank"
+                    >
                         <svg
-                            fill="currentColor"
+                            fill="black"
                             stroke="currentColor"
                             stroke-linecap="round"
                             stroke-linejoin="round"
                             stroke-width="0"
-                            class="w-5 h-5"
+                            class="w-5 h-5 hover:fill-[#0e76a8] cursor-pointer"
                             viewBox="0 0 24 24"
                         >
                             <path
@@ -274,6 +492,6 @@
                     </a>
                 </span>
             </div>
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>
