@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/img/icon.svg"/>
+    <title>My Taxi Travel - Sobre Nosotros</title>
+</head>
+<body>
+    <!--Header-->
+    <header class="text-gray-600 body-font bg-[#FEBC2F]">
+            <div
+                class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
+            >
+                <a
+                    class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" href="/index.html"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        fill="currentColor"
+                        class="hover:fill-white cursor-pointer transition delay-100 ease-in-out"
+                        viewBox="0 0 16 16"
+                    >
+                        <path
+                            d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679q.05.242.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.8.8 0 0 0 .381-.404l.792-1.848ZM3 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2m10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2M6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2zM2.906 5.189a.51.51 0 0 0 .497.731c.91-.073 3.35-.17 4.597-.17s3.688.097 4.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 11.691 3H4.309a.5.5 0 0 0-.447.276L2.906 5.19Z"
+                        />
+                    </svg>
+                    <span class="ml-3 text-xl hover:text-white cursor-pointer transition delay-100 ease-in-out">My Taxi Travel</span>
+                </a>
+                <nav
+                    class="md:ml-auto flex flex-wrap items-center text-base justify-center"
+                >
+                    <a
+                        class="mr-5 hover:text-gray-900"
+                        href="/index.html"
+                        >Inicio</a
+                    >
+                    <a
+                        class="mr-5 hover:text-gray-900"
+                        href="/paginas/solicitarViaje/solicitudViaje.html"
+                        >Solicitar Viaje</a
+                    >
+                    <a
+                        class="mr-5 text-gray-900 bg-neutral-50 rounded-lg p-1"
+                        href="sobreNosotros.html"
+                        >Sobre Nosotros</a
+                    >
+                    <a
+                        class="mr-5 hover:text-gray-900"
+                        href="/paginas/soporte/soporte.html"
+                        >Soporte</a
+                    >
+                    <a
+                        class="mr-5 hover:text-gray-900"
+                        href="/paginas/miCuenta/miCuenta.html"
+                        >Mi Cuenta</a
+                    >
+                </nav>
+                <button
+                    class="inline-flex items-center bg-gray-300 border-1 border-black rounded-lg py-1 px-3 focus:outline-none hover:bg-gray-100 hover:text-black rounded text-base mt-4 md:mt-0 cursor-pointer transition delay-100 ease-in-out mr-2"
+                >
+                    <a href="/paginas/login/login.html">Login</a>
+                    <svg
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        class="w-4 h-4 ml-1"
+                        viewBox="0 0 24 24"
+                    >
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+                <button
+                    class="inline-flex items-center border-1 border-black bg-[#2C2C2C] rounded-lg py-1 px-3 focus:outline-none hover:bg-gray-200 hover:text-black rounded text-base mt-4 md:mt-0 cursor-pointer transition delay-100 ease-in-out text-white"
+                >
+                    <a href="/paginas/login/registro.html">Registro</a>
+                    <svg
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        class="w-4 h-4 ml-1"
+                        viewBox="0 0 24 24"
+                    >
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+    </header>
+
+    <!--Informacion-->
+    <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+            <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600">
+            </div>
+            <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Before they sold out
+                <br class="hidden lg:inline-block">readymade gluten
+            </h1>
+            <p class="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
+            <div class="flex justify-center">
+                <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+                <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Calificaciones-->
+    <section class="text-gray-600 body-font">
+            <div class="container px-5 py-24 mx-auto">
+                <h1
+                    class="text-3xl font-medium title-font text-gray-900 mb-12 text-center"
+                >
+                    Reseñas de nuestros clientes
+                </h1>
+                <div class="flex flex-3 -m-4">
+                    <div class="p-4 md:w-1/2 w-full">
+                        <div class="h-full bg-gray-100 p-8 rounded shadow-lg">
+                            <div class="flex mb-2">
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="black"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                <polygon
+                                    points="12 1 15 8 22 9 17 15 19 22 12 18 5 22 7 15 2 9 9 8"
+                                />
+                                </svg>
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="black"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                <polygon
+                                    points="12 1 15 8 22 9 17 15 19 22 12 18 5 22 7 15 2 9 9 8"
+                                />
+                                </svg>
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="black"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                <polygon
+                                    points="12 1 15 8 22 9 17 15 19 22 12 18 5 22 7 15 2 9 9 8"
+                                />
+                                </svg>
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="black"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                <polygon
+                                    points="12 1 15 8 22 9 17 15 19 22 12 18 5 22 7 15 2 9 9 8"
+                                />
+                                </svg>
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="black"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                <polygon
+                                    points="12 1 15 8 22 9 17 15 19 22 12 18 5 22 7 15 2 9 9 8"
+                                />
+                                </svg>
+                            </div>
+                            <p class="leading-relaxed mb-6">
+                                “El servicio fue muy rápido, pedí el taxi y llegó en menos de 5 minutos. El conductor fue muy amable y el carro estaba limpio.”
+                            </p>
+                            <a class="inline-flex items-center">
+                                <img
+                                    alt="testimonial"
+                                    src="https://dummyimage.com/106x106"
+                                    class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
+                                />
+                                <span class="flex-grow flex flex-col pl-4">
+                                    <span
+                                        class="title-font font-medium text-gray-900"
+                                        >Mariana López</span
+                                    >
+                                    <span class="text-gray-500 text-sm"
+                                        >29/08/2025</span
+                                    >
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/2 w-full">
+                        <div class="h-full bg-gray-100 p-8 rounded shadow-lg">
+                            <div class="flex mb-2">
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="black"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                <polygon
+                                    points="12 1 15 8 22 9 17 15 19 22 12 18 5 22 7 15 2 9 9 8"
+                                />
+                                </svg>
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="black"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                <polygon
+                                    points="12 1 15 8 22 9 17 15 19 22 12 18 5 22 7 15 2 9 9 8"
+                                />
+                                </svg>
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="black"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                <polygon
+                                    points="12 1 15 8 22 9 17 15 19 22 12 18 5 22 7 15 2 9 9 8"
+                                />
+                                </svg>
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="black"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                <polygon
+                                    points="12 1 15 8 22 9 17 15 19 22 12 18 5 22 7 15 2 9 9 8"
+                                />
+                                </svg>
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="black"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                <polygon
+                                    points="12 1 15 8 22 9 17 15 19 22 12 18 5 22 7 15 2 9 9 8"
+                                />
+                                </svg>
+                            </div>
+                            <p class="leading-relaxed mb-6">
+                                “Excelente experiencia. Me sentí segura durante el viaje y la opción de seguimiento en tiempo real me dio mucha tranquilidad.”
+                            </p>
+                            <a class="inline-flex items-center">
+                                <img
+                                    alt="testimonial"
+                                    src="https://dummyimage.com/107x107"
+                                    class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
+                                />
+                                <span class="flex-grow flex flex-col pl-4">
+                                    <span
+                                        class="title-font font-medium text-gray-900"
+                                        >Carlos Méndez</span
+                                    >
+                                    <span class="text-gray-500 text-sm"
+                                        >29/08/2025</span
+                                    >
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/2 w-full">
+                        <div class="h-full bg-gray-100 p-8 rounded shadow-lg">
+                            <div class="flex mb-2">
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="black"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                <polygon
+                                    points="12 1 15 8 22 9 17 15 19 22 12 18 5 22 7 15 2 9 9 8"
+                                />
+                                </svg>
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="black"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                <polygon
+                                    points="12 1 15 8 22 9 17 15 19 22 12 18 5 22 7 15 2 9 9 8"
+                                />
+                                </svg>
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="black"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                <polygon
+                                    points="12 1 15 8 22 9 17 15 19 22 12 18 5 22 7 15 2 9 9 8"
+                                />
+                                </svg>
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="black"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                <polygon
+                                    points="12 1 15 8 22 9 17 15 19 22 12 18 5 22 7 15 2 9 9 8"
+                                />
+                                </svg>
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="black"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                <polygon
+                                    points="12 1 15 8 22 9 17 15 19 22 12 18 5 22 7 15 2 9 9 8"
+                                />
+                                </svg>
+                            </div>
+                            <p class="leading-relaxed mb-6">
+                                “Muy buen servicio, lo uso casi todos los días para ir al trabajo. Nunca he tenido inconvenientes y los conductores siempre son respetuosos.”
+                            </p>
+                            <a class="inline-flex items-center">
+                                <img
+                                    alt="testimonial"
+                                    src="https://dummyimage.com/106x106"
+                                    class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
+                                />
+                                <span class="flex-grow flex flex-col pl-4">
+                                    <span
+                                        class="title-font font-medium text-gray-900"
+                                        >Andrés Torres</span
+                                    >
+                                    <span class="text-gray-500 text-sm"
+                                        >29/08/2025</span
+                                    >
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!--Footer-->
+    <footer class="text-gray-600 body-font bg-[#FEBC2F]">
+            <div
+                class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
+            >
+                <a
+                    class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
+                >
+                    <a href="/index.html">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="30"
+                            height="30"
+                            fill="black"
+                            class="hover:fill-white cursor-pointer transition delay-100 ease-in-out"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679q.05.242.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.8.8 0 0 0 .381-.404l.792-1.848ZM3 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2m10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2M6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2zM2.906 5.189a.51.51 0 0 0 .497.731c.91-.073 3.35-.17 4.597-.17s3.688.097 4.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 11.691 3H4.309a.5.5 0 0 0-.447.276L2.906 5.19Z"
+                            />
+                        </svg>
+                    </a>
+                    <span class="ml-3 text-xl text-black">My Taxi Travel</span>
+                </a>
+                <p
+                    class="text-sm text-black sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-black-500 sm:py-2 sm:mt-0 mt-4"
+                >
+                    © 2025 My Taxi Travel
+                </p>
+                <span
+                    class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
+                >
+                    <a
+                        class="text-gray-500"
+                        href="https://www.facebook.com/"
+                        target="_blank"
+                    >
+                        <svg
+                            fill="black"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            class="w-5 h-5 hover:fill-[#3b5998] cursor-pointer"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                            ></path>
+                        </svg>
+                    </a>
+                    <a
+                        class="ml-3 text-gray-500"
+                        href="https://x.com/home?lang=es"
+                        target="_blank"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 50 50"
+                            fill="black"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="0"
+                            class="w-5 h-5 hover:fill-[#0e76a8] cursor-pointer"
+                        >
+                            <path
+                                d="M 5.9199219 6 L 20.582031 27.375 L 6.2304688 44 L 9.4101562 44 L 21.986328 29.421875 L 31.986328 44 L 44 44 L 28.681641 21.669922 L 42.199219 6 L 39.029297 6 L 27.275391 19.617188 L 17.933594 6 L 5.9199219 6 z M 9.7167969 8 L 16.880859 8 L 40.203125 42 L 33.039062 42 L 9.7167969 8 z"
+                            ></path>
+                        </svg>
+                    </a>
+                    <a
+                        class="ml-3 text-gray-500"
+                        href="https://www.instagram.com/"
+                        target="_blank"
+                    >
+                        <svg
+                            fill="black"
+                            stroke="#FEBC2F"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            class="w-5 h-5 hover:fill-[#833ab4] cursor-pointer"
+                            viewBox="0 0 24 24"
+                        >
+                            <rect
+                                width="20"
+                                height="20"
+                                x="2"
+                                y="2"
+                                rx="5"
+                                ry="5"
+                            ></rect>
+                            <path
+                                d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+                            ></path>
+                        </svg>
+                    </a>
+                    <a
+                        class="ml-3 text-gray-500"
+                        href="https://co.linkedin.com/"
+                        target="_blank"
+                    >
+                        <svg
+                            fill="black"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="0"
+                            class="w-5 h-5 hover:fill-[#0e76a8] cursor-pointer"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke="none"
+                                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                            ></path>
+                            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                        </svg>
+                    </a>
+                </span>
+            </div>
+    </footer>
+</body>
+
+</html>
