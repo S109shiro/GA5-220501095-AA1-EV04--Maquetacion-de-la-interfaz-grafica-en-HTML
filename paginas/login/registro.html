@@ -110,16 +110,16 @@
         <h2 class="text-gray-900 text-lg font-medium title-font mb-5">Formulario de registro</h2>
         <div class="grid grid-cols-2 gap-4">
             <div class="relative mb-4 ">
-                <input type="text" id="name" name="name" placeholder="Nombre" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                <input type="text" id="name" name="name" placeholder="Nombre" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
             </div>
             <div class="relative mb-4">
-                <input type="text" id="last-name" name="last-name" placeholder="Apellidos" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                <input type="text" id="last-name" name="last-name" placeholder="Apellidos" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
             </div>
             <div class="relative mb-4">
-                <input type="email" id="email" name="email" placeholder="Correo Electronico" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                <input type="email" id="email" name="email" placeholder="Correo Electronico" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
             </div>
             <div class="relative mb-4">
-                <select name="document" id="document" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                <select name="document" id="document" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
                     <option value="0">Tipo de documento</option>
                     <option value="1">Cedula de ciudadania</option>
                     <option value="2">Pasaporte</option>
@@ -127,24 +127,24 @@
                 </select>
             </div>
             <div class="relative mb-4">
-                <input type="number" id="document-number" name="document-number" placeholder="Numero de documento" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                <input type="number" id="document-number" name="document-number" placeholder="Numero de documento" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
             </div>
             <div class="relative mb-4">
-                <input type="number" id="number-t" name="number-t" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" placeholder="Numero de telefono">
+                <input type="number" id="number-t" name="number-t" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" placeholder="Numero de telefono" required>
             </div>
             <div class="relative mb-4">
-                <input type="password" id="password" name="password" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" placeholder="Ingrese una contraseña">
+                <input type="password" id="password" name="password" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" placeholder="Ingrese una contraseña" required>
             </div>
             <div class="relative mb-4">
                 <input type="password" id="c-password" name="c-password" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                placeholder="Confirme su contraseña">
+                placeholder="Confirme su contraseña" required>
             </div>
             
         </div>
 
         <div class="relative mb-4">
             <label>Adjuntar documento de identidad</label>
-                <input type="file" name="" id="" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"  accept="application/pdf">
+                <input type="file" name="" id="" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"  accept="application/pdf" required>
         </div>
 
         <div class="relative mb-4">
@@ -152,7 +152,7 @@
             <label for="noticias">Deseo recibir noticias a mi correo electronico</label>
         </div>
         <div class="relative mb-4">
-            <input type="checkbox" name="terminos" id="terminos" class="accent-[#2C2C2C] cursor-pointer">
+            <input type="checkbox" name="terminos" id="terminos" class="accent-[#2C2C2C] cursor-pointer" required>
             <label for="terminos">Acepto los terminos y condiciones</label>
         </div>
 
