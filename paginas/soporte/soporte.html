@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="../../img/icon.svg"/>
     <title>My Taxi Travel - Soporte</title>
+    <link rel="stylesheet" href="../../css/styleHF.css">
+    <link rel="stylesheet" href="../../css/soporte.css">
 </head>
 <body>
     <!--Header-->
-    <header class="text-gray-600 body-font bg-[#FEBC2F]">
+    <header class="text-gray-600 body-font bg-[var(--bg)]">
             <div
                 class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
             >
@@ -95,11 +97,16 @@
                         </svg>
                     </button>
                 </a>
+                <button
+                    onclick="cambiarTema()" id="boton-tema" class="inline-flex items-center border-1 border-black bg-[#2C2C2C] rounded-lg py-1 px-3 focus:outline-none hover:bg-gray-200 hover:text-black rounded text-base mt-4 md:mt-0 cursor-pointer transition delay-100 ease-in-out text-white"
+                >
+                    Modo Oscuro 🌙
+                </button>
             </div>
     </header>
 
     <!--Preguntas Frecuentes-->
-    <section class="text-gray-600 body-font">
+    <section class="preguntas-frecuentes text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto flex flex-wrap">
             <h2 class="font-medium title-font text-xl text-gray-900 mb-1">PREGUNTAS FRECUENTES</h2>
             <div class="flex flex-wrap w-full">
@@ -163,9 +170,9 @@
     </section>
 
     
-    <!--Ayuda-->
+    <!--Contactanos-->
     <section class="text-gray-600 body-font relative">
-        <div class="container px-5 py-24 mx-auto">
+        <div class="contactanos container px-5 py-24 mx-auto">
             <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
             <div class="flex flex-col text-center w-full mb-12">
             <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900 pt-5">Contactanos</h1>
@@ -208,7 +215,7 @@
 
 
     <!--Footer-->
-    <footer class="text-gray-600 body-font bg-[#FEBC2F]">
+    <footer class="text-gray-600 body-font bg-[var(--bg)]">
             <div
                 class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
             >
@@ -330,5 +337,7 @@
                 </span>
             </div>
     </footer>
+
+    <script src="../../scripts/botonTema.js"></script>
 </body>
 </html>
