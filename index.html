@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="./img/icon.svg"/>
     <title>My Taxi Travel - Inicio</title>
+    <link rel="stylesheet" href="css/styleHF.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
     <!--Header-->
-    <header class="text-gray-600 body-font bg-[#FEBC2F]">
+    <header class="text-gray-600 body-font bg-[var(--bg)]">
             <div
                 class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
             >
@@ -95,6 +97,11 @@
                         </svg>
                     </button>
                 </a>
+                <button
+                    onclick="cambiarTema()" id="boton-tema" class="inline-flex items-center border-1 border-black bg-[#2C2C2C] rounded-lg py-1 px-3 focus:outline-none hover:bg-gray-200 hover:text-black rounded text-base mt-4 md:mt-0 cursor-pointer transition delay-100 ease-in-out text-white"
+                >
+                    Modo Oscuro 🌙
+                </button>
             </div>
     </header>
 
@@ -136,8 +143,8 @@
                 </h1>
                 <div class="flex flex-3 -m-4">
                     <div class="p-4 md:w-1/2 w-full">
-                        <div class="h-full bg-gray-100 p-8 rounded shadow-lg">
-                            <div class="flex mb-2">
+                        <div class="tarjeta h-full bg-gray-100 p-8 rounded shadow-lg">
+                            <div class="estrella flex mb-2">
                                 <svg
                                     width="20"
                                     height="20"
@@ -211,8 +218,8 @@
                         </div>
                     </div>
                     <div class="p-4 md:w-1/2 w-full">
-                        <div class="h-full bg-gray-100 p-8 rounded shadow-lg">
-                            <div class="flex mb-2">
+                        <div class="tarjeta h-full bg-gray-100 p-8 rounded shadow-lg">
+                            <div class="estrella flex mb-2">
                                 <svg
                                     width="20"
                                     height="20"
@@ -286,8 +293,8 @@
                         </div>
                     </div>
                     <div class="p-4 md:w-1/2 w-full">
-                        <div class="h-full bg-gray-100 p-8 rounded shadow-lg">
-                            <div class="flex mb-2">
+                        <div class="tarjeta h-full bg-gray-100 p-8 rounded shadow-lg">
+                            <div class="estrella flex mb-2">
                                 <svg
                                     width="20"
                                     height="20"
@@ -365,7 +372,7 @@
     </section>
 
     <!--Footer-->
-    <footer class="text-gray-600 body-font bg-[#FEBC2F]">
+    <footer class="text-gray-600 body-font bg-[var(--bg)]">
             <div
                 class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
             >
@@ -487,6 +494,9 @@
                 </span>
             </div>
     </footer>
+
+    
+    <script src="scripts/botonTema.js"></script>
 </body>
 
 </html>
