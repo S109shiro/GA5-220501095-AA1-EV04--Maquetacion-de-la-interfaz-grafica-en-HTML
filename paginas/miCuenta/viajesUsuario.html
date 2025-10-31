@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="../../img/icon.svg"/>
     <title>My Taxi Travel - Historial de Viajes</title>
+    <link rel="stylesheet" href="../../css/styleHF.css">
+    <link rel="stylesheet" href="../../css/viajesUsuario.css">
 </head>
 <body>
     <!--Header-->
-    <header class="text-gray-600 body-font bg-[#FEBC2F]">
+    <header class="text-gray-600 body-font bg-[var(--bg)]">
             <div
                 class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
             >
@@ -95,11 +97,16 @@
                         </svg>
                     </button>
                 </a>
+                <button
+                    onclick="cambiarTema()" id="boton-tema" class="inline-flex items-center border-1 border-black bg-[#2C2C2C] rounded-lg py-1 px-3 focus:outline-none hover:bg-gray-200 hover:text-black rounded text-base mt-4 md:mt-0 cursor-pointer transition delay-100 ease-in-out text-white"
+                >
+                    Modo Oscuro 🌙
+                </button>
             </div>
     </header>
 
     <!--Lista de viajes-->
-    <section class="text-gray-600 body-font">
+    <section class="contenedor text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto">
             <div class="flex flex-col text-center w-full mb-20">
             <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">Historial de Viajes Realizados</h1>
@@ -109,84 +116,83 @@
             <table class="table-auto w-full text-left whitespace-no-wrap">
                 <thead>
                 <tr>
-                    <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl">ID Viaje</th>
-                    <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">Inicio</th>
-                    <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">Destino</th>
-                    <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">Precio</th>
-                    <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">Fecha</th>
-                    <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">Detalles</th>
-                    <th class="w-10 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tr rounded-br"></th>
+                    <th class="encabezado px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl">ID Viaje</th>
+                    <th class="encabezado px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">Inicio</th>
+                    <th class="encabezado px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">Destino</th>
+                    <th class="encabezado px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">Precio</th>
+                    <th class="encabezado px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">Fecha</th>
+                    <th class="encabezado px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tr rounded-br">Detalles</th>
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <td class="px-4 py-3">V001</td>
+                <tr class="items">
+                    <td class="px-4 py-3"><b>V001</b></td>
                     <td class="px-4 py-3">Centro Comercial Viva</td>
                     <td class="px-4 py-3">Terminal de Transporte</td>
-                    <td class="border-t-2 border-gray-200 px-4 py-3 text-lg text-gray-900">$20.000</td>
-                    <td class="border-t-2 border-gray-200 px-4 py-3 text-lg text-gray-900">31/08/2025</td>
+                    <td class="px-4 py-3">$20.000</td>
+                    <td class="px-4 py-3">31/08/2025</td>
                     <td class="w-10 text-center">
-                    <button class="flex ml-auto border-0 py-1 px-3 focus:outline-none  rounded text-white bg-[#2C2C2C] hover:bg-gray-300 hover:text-black cursor-not-allowed transition-colors duration-200 ease-in-out">Detalles</button>
+                        <button class="b-detalles flex ml-auto border-0 py-1 px-3 focus:outline-none rounded text-white bg-[#2C2C2C] hover:bg-gray-300 hover:text-black cursor-not-allowed transition-colors duration-200 ease-in-out">Detalles</button>
                     </td>
                 </tr>
-                <tr>
-                    <td class="border-t-2 border-gray-200 px-4 py-3">V002</td>
+                <tr class="items">
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><b>V002</b></td>
                     <td class="border-t-2 border-gray-200 px-4 py-3">Parque el Tunal</td>
                     <td class="border-t-2 border-gray-200 px-4 py-3">Aeropuerto El Dorado</td>
-                    <td class="border-t-2 border-gray-200 px-4 py-3 text-lg text-gray-900">$45.000</td>
-                    <td class="border-t-2 border-gray-200 px-4 py-3 text-lg text-gray-900">20/08/2025</td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3">$45.000</td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3">20/08/2025</td>
                     <td class="border-t-2 border-gray-200 w-10 text-center">
-                    <button class="flex ml-auto border-0 py-1 px-3 focus:outline-none  rounded text-white bg-[#2C2C2C] hover:bg-gray-300 hover:text-black cursor-not-allowed transition-colors duration-200 ease-in-out">Detalles</button>
+                        <button class="b-detalles flex ml-auto border-0 py-1 px-3 focus:outline-none rounded text-white bg-[#2C2C2C] hover:bg-gray-300 hover:text-black cursor-not-allowed transition-colors duration-200 ease-in-out">Detalles</button>
                     </td>
                 </tr>
-                <tr>
-                    <td class="border-t-2 border-gray-200 px-4 py-3">V003</td>
+                <tr class="items">
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><b>V003</b></td>
                     <td class="border-t-2 border-gray-200 px-4 py-3">Universidad Nacional</td>
                     <td class="border-t-2 border-gray-200 px-4 py-3">Estadio Metropolitano de Techo</td>
-                    <td class="border-t-2 border-gray-200 px-4 py-3 text-lg text-gray-900">$22.500</td>
-                    <td class="border-t-2 border-gray-200 px-4 py-3 text-lg text-gray-900">19/08/2025</td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3">$22.500</td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3">19/08/2025</td>
                     <td class="border-t-2 border-gray-200 w-10 text-center">
-                    <button class="flex ml-auto border-0 py-1 px-3 focus:outline-none  rounded text-white bg-[#2C2C2C] hover:bg-gray-300 hover:text-black cursor-not-allowed transition-colors duration-200 ease-in-out">Detalles</button>
+                        <button class="b-detalles flex ml-auto border-0 py-1 px-3 focus:outline-none  rounded text-white bg-[#2C2C2C] hover:bg-gray-300 hover:text-black cursor-not-allowed transition-colors duration-200 ease-in-out">Detalles</button>
                     </td>
                 </tr>
-                <tr>
-                    <td class="border-t-2 border-gray-200 px-4 py-3">V004</td>
+                <tr class="items">
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><b>V004</b></td>
                     <td class="border-t-2 border-gray-200 px-4 py-3">Barrio San José</td>
                     <td class="border-t-2 border-gray-200 px-4 py-3">Hospital Central</td>
-                    <td class="border-t-2 border-gray-200 px-4 py-3 text-lg text-gray-900">$16.000</td>
-                    <td class="border-t-2 border-gray-200 px-4 py-3 text-lg text-gray-900">18/08/2025</td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3">$16.000</td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3">18/08/2025</td>
                     <td class="border-t-2 border-gray-200 w-10 text-center">
-                    <button class="flex ml-auto border-0 py-1 px-3 focus:outline-none  rounded text-white bg-[#2C2C2C] hover:bg-gray-300 hover:text-black cursor-not-allowed transition-colors duration-200 ease-in-out">Detalles</button>
+                        <button class="b-detalles flex ml-auto border-0 py-1 px-3 focus:outline-none  rounded text-white bg-[#2C2C2C] hover:bg-gray-300 hover:text-black cursor-not-allowed transition-colors duration-200 ease-in-out">Detalles</button>
                     </td>
                 </tr>
-                <tr>
-                    <td class="border-t-2 border-gray-200 px-4 py-3">V005</td>
+                <tr class="items">
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><b>V005</b></td>
                     <td class="border-t-2 border-gray-200 px-4 py-3">Usaquén</td>
                     <td class="border-t-2 border-gray-200 px-4 py-3">Parque Simón Bolívar</td>
-                    <td class="border-t-2 border-gray-200 px-4 py-3 text-lg text-gray-900">$28.500</td>
-                    <td class="border-t-2 border-gray-200 px-4 py-3 text-lg text-gray-900">15/08/2025</td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3">$28.500</td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3">15/08/2025</td>
                     <td class="border-t-2 border-gray-200 w-10 text-center">
-                    <button class="flex ml-auto border-0 py-1 px-3 focus:outline-none  rounded text-white bg-[#2C2C2C] hover:bg-gray-300 hover:text-black cursor-not-allowed transition-colors duration-200 ease-in-out">Detalles</button>
+                        <button class="b-detalles flex ml-auto border-0 py-1 px-3 focus:outline-none  rounded text-white bg-[#2C2C2C] hover:bg-gray-300 hover:text-black cursor-not-allowed transition-colors duration-200 ease-in-out">Detalles</button>
                     </td>
                 </tr>
-                <tr>
-                    <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">V006</td>
+                <tr class="items">
+                    <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3"><b>V006</b></td>
                     <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">Suba</td>
                     <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">Monserrate</td>
-                    <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-lg text-gray-900">$26.000</td>
-                    <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-lg text-gray-900">10/08/2025</td>
+                    <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">$26.000</td>
+                    <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">10/08/2025</td>
                     <td class="border-t-2 border-b-2 border-gray-200 w-10 text-center">
-                    <button class="flex ml-auto border-0 py-1 px-3 focus:outline-none  rounded text-white bg-[#2C2C2C] hover:bg-gray-300 hover:text-black cursor-not-allowed transition-colors duration-200 ease-in-out">Detalles</button>
+                        <button class="b-detalles flex ml-auto border-0 py-1 px-3 focus:outline-none  rounded text-white bg-[#2C2C2C] hover:bg-gray-300 hover:text-black cursor-not-allowed transition-colors duration-200 ease-in-out">Detalles</button>
                     </td>
                 </tr>
-                <tr>
-                    <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">V007</td>
-                    <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">La Candelaria</td>
-                    <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">Corferias</td>
-                    <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-lg text-gray-900">$20.000</td>
-                    <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-lg text-gray-900">01/08/2025</td>
-                    <td class="border-t-2 border-b-2 border-gray-200 w-10 text-center">
-                    <button class="flex ml-auto border-0 py-1 px-3 focus:outline-none  rounded text-white bg-[#2C2C2C] hover:bg-gray-300 hover:text-black cursor-not-allowed transition-colors duration-200 ease-in-out">Detalles</button>
+                <tr class="items">
+                    <td class="px-4 py-3"><b>V007</b></td>
+                    <td class="px-4 py-3">La Candelaria</td>
+                    <td class="px-4 py-3">Corferias</td>
+                    <td class="px-4 py-3">$20.000</td>
+                    <td class="px-4 py-3">01/08/2025</td>
+                    <td class="w-10 text-center">
+                        <button class="b-detalles flex ml-auto border-0 py-1 px-3 focus:outline-none  rounded text-white bg-[#2C2C2C] hover:bg-gray-300 hover:text-black cursor-not-allowed transition-colors duration-200 ease-in-out">Detalles</button>
                     </td>
                 </tr>
                 </tbody>
@@ -196,7 +202,7 @@
     </section>
 
     <!--Footer-->
-    <footer class="text-gray-600 body-font bg-[#FEBC2F]">
+    <footer class="text-gray-600 body-font bg-[var(--bg)]">
             <div
                 class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
             >
@@ -318,6 +324,8 @@
                 </span>
             </div>
     </footer>
+    <script src="../../scripts/botonTema.js"></script>
+
 </body>
 
 </html>
