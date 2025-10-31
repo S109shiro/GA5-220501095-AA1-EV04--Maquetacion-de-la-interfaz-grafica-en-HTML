@@ -26,6 +26,11 @@
     margin: 0 0.5rem 0 0.5rem;
 }
 
+.tema-oscuro .b-detalles{
+    border: 1px solid #D1D5DB;
+    border-radius: 5px;
+}
+
 .tema-oscuro{
     --colorTitulo: white;
     --colorTexto: white;
