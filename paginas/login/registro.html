@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="../../img/icon.svg"/>
     <title>My Taxi Travel - Registro</title>
+    <link rel="stylesheet" href="../../css/styleHF.css">
+    <link rel="stylesheet" href="../../css/registro.css">
 </head>
 <body>
 <!--Header-->
-    <header class="text-gray-600 body-font bg-[#FEBC2F]">
+    <header class="text-gray-600 body-font bg-[var(--bg)]">
             <div
                 class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
             >
@@ -95,18 +97,23 @@
                         </svg>
                     </button>
                 </a>
+                <button
+                    onclick="cambiarTema()" id="boton-tema" class="inline-flex items-center border-1 border-black bg-[#2C2C2C] rounded-lg py-1 px-3 focus:outline-none hover:bg-gray-200 hover:text-black rounded text-base mt-4 md:mt-0 cursor-pointer transition delay-100 ease-in-out text-white"
+                >
+                    Modo Oscuro 🌙
+                </button>
             </div>
     </header>    
 
 <!--Registro-->
     <section class="text-gray-600 body-font">
-    <div class="container px-5 py-24 mx-auto flex flex-wrap items-center">
+    <div class="contenedor container px-5 py-24 mx-auto flex flex-wrap items-center">
         <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
         <h1 class="title-font font-medium text-3xl text-gray-900">Regístrate en My Taxi Travel</h1>
         <p class="leading-relaxed mt-4">Únete a nuestra comunidad y empieza a disfrutar de viajes seguros, rápidos y cómodos. El registro es fácil y solo te tomará unos minutos. Completa el formulario con tus datos básicos, confirma tu correo o número de teléfono ¡y listo!
         En pocos pasos estarás disfrutando de todo lo que My Taxi Travel tiene para ti.</p>
         </div>
-        <div class="lg:w-2/6 md:w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 rounded shadow-lg">
+        <div class="formulario lg:w-2/6 md:w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 rounded shadow-lg">
         <h2 class="text-gray-900 text-lg font-medium title-font mb-5">Formulario de registro</h2>
         <div class="grid grid-cols-2 gap-4">
             <div class="relative mb-4 ">
@@ -139,32 +146,33 @@
                 <input type="password" id="c-password" name="c-password" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 placeholder="Confirme su contraseña" required>
             </div>
-            
         </div>
 
-        <div class="relative mb-4">
+        <div class="elementos_separados">
+            <div class="relative mb-4">
             <label>Adjuntar documento de identidad</label>
                 <input type="file" name="" id="" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"  accept="application/pdf" required>
-        </div>
+            </div>
 
-        <div class="relative mb-4">
-            <input type="checkbox" name="noticias" id="noticias" class="accent-[#2C2C2C] cursor-pointer">
-            <label for="noticias">Deseo recibir noticias a mi correo electronico</label>
-        </div>
-        <div class="relative mb-4">
-            <input type="checkbox" name="terminos" id="terminos" class="accent-[#2C2C2C] cursor-pointer" required>
-            <label for="terminos">Acepto los terminos y condiciones</label>
+            <div class="relative mb-4">
+                <input type="checkbox" name="noticias" id="noticias" class="accent-[var(--colorTitulo)] cursor-pointer">
+                <label for="noticias">Deseo recibir noticias a mi correo electronico</label>
+            </div>
+            <div class="relative mb-4">
+                <input type="checkbox" name="terminos" id="terminos" class="accent-[var(--colorTitulo)] cursor-pointer" required>
+                <label for="terminos">Acepto los terminos y condiciones</label>
+            </div>
         </div>
 
         
         <button class="text-white bg-[#2C2C2C] hover:bg-gray-300 hover:text-black border-0 py-2 px-8 focus:outline-none rounded text-lg cursor-not-allowed">Registrarme</button>
-            <p class="text-xs text-gray-500 mt-3"><a href="./login.html" class="hover:text-[#2C2C2C] hover:underline">Ya tengo una cuenta</a></p>
+            <p class="text-xs text-gray-500 mt-3"><a href="./login.html" class="hover:underline">Ya tengo una cuenta</a></p>
             </div>
     </div>
     </section>
 
     <!--Footer-->
-    <footer class="text-gray-600 body-font bg-[#FEBC2F]">
+    <footer class="text-gray-600 body-font bg-[var(--bg)]">
             <div
                 class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
             >
@@ -286,5 +294,7 @@
                 </span>
             </div>
     </footer>
+
+    <script src="../../scripts/botonTema.js"></script>
 </body>
 </html>
