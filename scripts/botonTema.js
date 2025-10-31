@@ -20,6 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const temaGuardado = localStorage.getItem('tema');
     const boton = document.getElementById("boton-tema");
 
+    // Logica cuando se recargue la ventana
     if (temaGuardado === 'oscuro') {
         document.documentElement.classList.add('tema-oscuro');
         boton.innerText = "Modo Claro ☀️";
