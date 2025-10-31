@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="../../img/icon.svg"/>
     <title>My Taxi Travel - Login</title>
+    <link rel="stylesheet" href="../../css/styleHF.css">
+    <link rel="stylesheet" href="../../css/login.css">
 </head>
-<body>
-<!--Header-->
-    <header class="text-gray-600 body-font bg-[#FEBC2F]">
+<body class="flex flex-col min-h-screen">
+    <!--Header-->
+    <header class="text-gray-600 body-font bg-[var(--bg)]">
             <div
                 class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
             >
@@ -95,50 +97,54 @@
                         </svg>
                     </button>
                 </a>
+                <button
+                    onclick="cambiarTema()" id="boton-tema" class="inline-flex items-center border-1 border-black bg-[#2C2C2C] rounded-lg py-1 px-3 focus:outline-none hover:bg-gray-200 hover:text-black rounded text-base mt-4 md:mt-0 cursor-pointer transition delay-100 ease-in-out text-white"
+                >
+                    Modo Oscuro 🌙
+                </button>
             </div>
     </header>    
 
-<!--Login-->
-    <div class="flex justify-center m-45">
-        <div
-            class="flex flex-col justify-center items-center md:flex-row shadow rounded-xl max-w-7xl w-[90%] h-[670px] md:h-[460px] m-2 rounded shadow-lg">
-            <div class="h-[100%] w-full md:w-3/4  bg-center  bg-cover rounded-lg"
+    <!--Login-->
+    <main class="flex-grow flex justify-center items-center px-4 py-10">
+        <div class="flex flex-col md:flex-row shadow-lg rounded-xl overflow-hidden max-w-6xl w-full bg-[var(--tarjeta_color)]">
+            <div class="w-full md:w-1/2 h-60 md:h-auto bg-cover bg-center" 
                 style="background-image: url('../../img/login/login-image.jpg')">
             </div>
-            <div class="h-[90%] w-full md:w-3/4 pb-5 mb-20 ">
-                <div class="text-xl cursor-pointer flex flex-col justify-center items-center mt-5 md:mt-0">
-                    <img class="h-10 md:h-14 w-[13%] md:w-[17%] "
-                        src="../../img/icon.svg"
-                        alt="" srcset="">
-                    <h1 class="font-semibold text-gray-600">My Taxi Travel</h1>
-                </div>
-                <div class="flex flex-col justify-center items-center mt-10 md:mt-14 space-y-6 md:space-y-8">
-                    <div class="">
-                        <input type="text" placeholder="Correo Electronico"
-                            class=" bg-gray-100 rounded-lg px-5 py-2 focus:border border-blue-600 focus:outline-none text-black placeholder:text-gray-600 placeholder:opacity-50 font-semibold md:w-72 lg:w-[340px]" required>
-                    </div>
-                    <div class="">
-                        <input type="password" placeholder="Contraseña"
-                            class=" bg-gray-100 rounded-lg px-5 py-2 focus:border border-blue-600 focus:outline-none text-black placeholder:text-gray-600 placeholder:opacity-50 font-semibold md:w-72 lg:w-[340px]" required>
-                    </div>
-                    <div class="flex space-x-2 -ml-28 md:-ml-40  lg:-ml-52">
-                        <input class="accent-[#2C2C2C]" type="checkbox" id="recordarDatos" name="recordarDatos">
-                        <label for="recordarDatos" class="text-sm font-semibold text-gray-400 -mt-1 cursor-pointer">Recordar datos</label>
-                    </div>
-                </div>
-                <div class="text-center mt-7">
-                    <button
-                        class="uppercase px-24 md:px-[118px] lg:px-[140px] py-2 rounded-md text-white bg-[#2C2C2C] hover:bg-gray-300 hover:text-black font-medium cursor-not-allowed">Ingresar</button>
-                </div>
-                <div class="text-center my-6 ">
-                    <a href="#" class="text-sm font-medium text-gray-400 hover:text-[#2C2C2C] hover:underline">Olvide mi contraseña</a>
-                </div>
-            </div>
+
+        <div class="flex flex-col justify-center items-center w-full md:w-1/2 p-8 md:p-12">
+            <div class="flex flex-col items-center mb-6">
+            <img class="icono h-12 md:h-14 w-16 md:w-20 mb-2" src="../../img/icon.svg" alt="">
+            <h1 class="titulo text-xl font-semibold text-gray-700">My Taxi Travel</h1>
         </div>
-    </div>
+
+        <form class="flex flex-col items-center space-y-5 w-full max-w-sm">
+            <input type="text" placeholder="Correo Electrónico"
+                class="w-full bg-gray-100 rounded-lg px-5 py-2 focus:outline-none text-black placeholder:text-gray-600 placeholder:opacity-50" required>
+
+            <input type="password" placeholder="Contraseña"
+                class="w-full bg-gray-100 rounded-lg px-5 py-2 focus:outline-none text-black placeholder:text-gray-600 placeholder:opacity-50" required>
+
+            <div class="flex items-center w-full space-x-2">
+                <input id="recordarDatos" name="recordarDatos" type="checkbox" class="accent-[var(--check)]">
+                <label for="recordarDatos" class="text-sm font-semibold text-gray-400 cursor-pointer">Recordar datos</label>
+            </div>
+
+            <button
+                class="boton uppercase w-full py-2 rounded-md text-white bg-[var(--colorBoton)] hover:bg-gray-300  font-medium transition">
+                Ingresar
+            </button>
+
+            <a href="#" class="olvidar text-sm font-medium text-gray-400 hover:text-[#2C2C2C] hover:underline">Olvidé mi contraseña</a>
+        </form>
+        </div>
+        </div>
+    </main>
+    
+
 
     <!--Footer-->
-    <footer class="text-gray-600 body-font bg-[#FEBC2F]">
+    <footer class="text-gray-600 body-font bg-[var(--bg)]">
             <div
                 class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
             >
@@ -260,5 +266,7 @@
                 </span>
             </div>
     </footer>
+
+    <script src="../../scripts/botonTema.js"></script>
 </body>
 </html>
